@@ -1,8 +1,9 @@
 services:
-  dev-backend:
+  preview-model:
     build:
       context: .
       dockerfile: Dockerfile
+    container_name: preview-model-ai
     volumes:
       - .:/app
     ports:
