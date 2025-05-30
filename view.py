@@ -1,5 +1,6 @@
 import streamlit as st
 
+
 class ChatView:
     def __init__(self, controller, model):
         self.controller = controller
