@@ -10,7 +10,7 @@ def main():
     chat_controller = ChatController(chat_model)
     chat_view = ChatView(chat_controller, chat_model)
 
-    # Correção aqui:
+
     chat_view.render_main_page()
     chat_view.render_sidebar()
 
