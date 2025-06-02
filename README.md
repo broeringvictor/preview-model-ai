@@ -1,8 +1,8 @@
 # AI Model & Agent Preview Interface
 
-**A Streamlit-based frontend application designed for rapid testing, demonstration, and validation of AI models and agent services. This interface allows developers and teams to quickly connect and interact with various AI backends, facilitating efficient evaluation, including user acceptance testing for Minimum Viable Products (MVPs) without the overhead of custom UI development.**
+**A Streamlit-based frontend application designed for rapid testing, demonstration, and validation of AI models and agent services. This interface enables developers and teams to quickly connect with and interact with various AI backends, fostering efficient evaluation—including user acceptance testing for Minimum Viable Products (MVPs)—without the overhead of custom UI development.**
 
-This application provides an intuitive chatbot-style interface, chosen for its widespread familiarity and ease of use. Users can directly configure API keys and select models through the UI, enabling seamless interaction with different AI agent services running on a backend. It is engineered for swift prototyping, early-stage assessment, and showcasing AI capabilities to both technical and non-technical stakeholders.
+This application provides an intuitive chatbot-style interface, chosen for its widespread familiarity and ease of use. Users can directly configure API keys and select models via the UI, enabling seamless interaction with various backend AI agent services. It is engineered for swift prototyping, early-stage assessment, and showcasing AI capabilities to both technical and non-technical stakeholders.
 
 ## ✨ Core Features
 
@@ -29,7 +29,7 @@ This application provides an intuitive chatbot-style interface, chosen for its w
     ```
 
 2.  **Install Dependencies:**
-    It's recommended to use a virtual environment.
+    Using a virtual environment is highly recommended.
     ```bash
     python -m venv venv
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
@@ -47,7 +47,7 @@ This method ensures a consistent environment and simplifies dependency managemen
     ```bash
     docker compose up --build
     ```
-    This command will build the Docker image (if it doesn't exist) and start the container.
+    This command builds the Docker image (if not already present) and starts the container.
 
 2.  **Access the Application:**
     Once the container is running, the Streamlit application is typically accessible via `http://localhost:8501` in your web browser. The `docker-compose.yml` file might specify a different port if modified.
@@ -66,7 +66,7 @@ This method ensures a consistent environment and simplifies dependency managemen
 
 ### Option 2: Running Locally (Without Docker)
 
-1.  **Ensure Dependencies are Installed** (as per the Installation section).
+1.  **Ensure all dependencies are installed** as detailed in the "Installation" section above.
 2.  **Navigate to the Application Directory:**
     ```bash
     cd preview-model-ai
@@ -83,7 +83,7 @@ This method ensures a consistent environment and simplifies dependency managemen
 Once the application is running:
 
 1.  **API Key Configuration:** Enter the API key for the target AI service.
-2.  **Model Selection:** Input the specific Model ID or name you intend to test.
+2.  **Model Selection:** Enter the specific Model ID or name you wish to test.
 3.  **Prompt Submission:** Type your message, query, or instruction for the AI agent in the designated input field.
 4.  **Interaction:** Submit your prompt. The AI agent's response will be displayed directly in the chat interface.
 
@@ -110,10 +110,10 @@ The application is designed for flexibility, allowing you to connect it to your 
 4.  **Update Application References:**
     Ensure that the main application script (`main.py`) correctly imports and instantiates your modified or new `AgentService`.
 
-By abstracting the AI interaction into a dedicated service class, the application allows for easy adaptation to various AI backends without altering the core UI components.
+By abstracting AI interactions into a dedicated service class, this application facilitates straightforward adaptation to various AI backends without requiring modifications to the core UI components.
 
 ## 📚 References
-* Inspired by a chatbot concept encountered in an Asimov Academy course.
+* This project was inspired by a chatbot concept from an Asimov Academy course.
 
 ## 🤝 Contributing
 Contributions are highly valued and welcome! If you have suggestions for improvements, new features, or bug fixes, please feel free to:
